@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "elytra-mace-addon",
+  "version": "${version}",
+  "name": "Elytra Mace Addon",
+  "description": "Elytra Mace addon for AUTISM Client: auto mace attacks while elytra flying.",
+  "authors": [
+    "theflex5710"
+  ],
+  "custom": {
+    "autism:color": "255,165,0",
+    "modmenu": {
+      "parent": {
+        "id": "autism"
+      }
+    }
+  },
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.autism.elytramace.ElytraMaceInit"
+    ],
+    "autism": [
+      "com.autism.elytramace.ElytraMaceAddon"
+    ]
+  },
+  "depends": {
+    "java": ">=25",
+    "minecraft": "${mc_compat}",
+    "fabricloader": ">=0.19.3",
+    "fabric-api": ">=${fabric_api_version}",
+    "autism": ">=${autism_api_version}"
+  }
+}
